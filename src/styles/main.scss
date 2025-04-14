@@ -1,14 +1,10 @@
 // All Sass files
-@import "styles/variables";
-@import "styles/header";
-@import "styles/footer";
-@import "styles/buttons";
+@use "./sass/variables"; 
+@use "./sass/reset";
+@use "./sass/header";
 
-
-$primary: #ff5733; 
-
-
-
-
-// Import Bootstrap AFTER defining variables
-@import "bootstrap/scss/bootstrap";
+// Bootstrap Overwrite Variables
+// Text Color
+body, html, h1, h2, h3, h4, h5, h6, p, span, a, li, ul {
+    color: variables.$textColor !important;
+}
