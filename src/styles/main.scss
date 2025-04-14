@@ -1,0 +1,14 @@
+// All Sass files
+@import "styles/variables";
+@import "styles/header";
+@import "styles/footer";
+@import "styles/buttons";
+
+
+$primary: #ff5733; 
+
+
+
+
+// Import Bootstrap AFTER defining variables
+@import "bootstrap/scss/bootstrap";
