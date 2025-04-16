@@ -52,11 +52,39 @@
 
         <!--HERO SECTION-->
         <main id="home">
-            <div class="container">
-                <h1>Hello World!</h1>
-                <img src="./build/dist/img/image00027.webp" class="img-fluid img-trending" alt="Moletom branco" loading="lazy">
-            </div>
-            
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img src="./build/dist/img/image00027.webp" draggable="false" alt="" class="d-block w-100 c-img">
+                        <div class="carousel-caption top-0 mt-4">
+                            <p class="mt-5 fs-3 mb-0 carousel-txt fw-bolder text-capitalize">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptatibus ratione 
+                                labore ab? Quo odit voluptates exercitationem placeat, quisquam accusamus.
+                            </p>
+                            <img src="" class="img-fluid">
+                            <h1 class="display-3 fw-bolder text-capitalize carousel-txt"></h1>
+                            <button class="btn btn-primary px-4 py-2 fs-5 mt-1">Entre em contato</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item c-item">
+                        <img src="./build/dist/img/image00027.webp" draggable="false" alt="" class="d-block w-100 c-img">
+                        <div class="carousel-caption top-0 mt-4">
+                            <p class="mt-5 display-3 fw-bolder text-capitalize carousel-txt">Aqui nós temos</p>
+                            <button class="btn btn-primary px-4 py-2 fs-5 mt-1">Peça Agora</button>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>   
         </main>
 
     </div>
