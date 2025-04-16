@@ -1,2 +1,14 @@
+# Node
 node_modules/
+
+# Source Files 
 src/img/
+src/scripts
+src/styles/
+
+# Build Files before optimization
+# build/styles
+
+# Temporary Files
+.DS_Store
+Thumbs.db

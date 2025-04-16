@@ -1,33 +1,33 @@
-// Importando as dependências
-const gulp = require("gulp");
-const webp = require("gulp-webp");
-const cssnano = require("gulp-cssnano");
-const uglify = require("gulp-uglify");
-const imagemin = require("gulp-imagemin");
+import gulp from "gulp";
+import cssnano from "gulp-clean-css"; 
+import uglify from "gulp-uglify";
+import imagemin from "gulp-imagemin";
+import webp from "gulp-webp";
 
-// Compressão de imagens para WebP
-function images() {
-  return gulp.src("src/img/*")  // Caminho das imagens originais
-    .pipe(imagemin())           // Otimiza as imagens antes da conversão
-    .pipe(webp())               // Converte para WebP
-    .pipe(gulp.dest("build/dist/img"));  // Salva as imagens WebP no diretório de saída
-}
-
-// Minificação de arquivos CSS
+// CSS
 function css() {
-  return gulp.src("src/styles/*.css")  // Caminho dos arquivos CSS
-    .pipe(cssnano())                   // Minifica os arquivos CSS
-    .pipe(gulp.dest("build/dist/styles"));  // Salva os arquivos CSS minificados
+  return gulp.src("build/styles/style.css")
+    .pipe(cssnano())
+    .pipe(gulp.dest("build/dist/styles"));
 }
 
-// Minificação de arquivos JavaScript
+// JavaScript
 function js() {
-  return gulp.src("src/scripts/*.js")  // Caminho dos arquivos JavaScript
-    .pipe(uglify())                    // Minifica os arquivos JavaScript
-    .pipe(gulp.dest("build/scripts"));  // Salva os arquivos JS minificados
+  return gulp.src("src/scripts/*.js") 
+    .pipe(uglify())
+    .pipe(gulp.dest("build/dist/scripts"));
 }
 
-// Tarefa padrão: executa as tarefas de forma paralela
-exports.default = gulp.series(
-  gulp.parallel(images, css, js)  // As três tarefas são executadas em paralelo
+// Compress to WEBP
+function webpImages() {
+  return gulp.src("src/img/*") 
+    .pipe(imagemin()) 
+    .pipe(webp()) 
+    .pipe(gulp.dest("build/dist/img")); 
+}
+
+export default gulp.series(
+  css,
+  js,
+  webpImages,
 );

@@ -1,7 +1,11 @@
 // All Sass files
 @use "./sass/variables"; 
+@use "./sass/mixins/mixins";
 @use "./sass/reset";
+@use "./sass/loading";
+@use "./sass/body";
 @use "./sass/header";
+@use "./sass/hero";
 
 // Bootstrap Overwrite Variables
 // Text Color

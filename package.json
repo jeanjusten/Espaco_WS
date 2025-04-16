@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "gulp",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,30 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass src/styles/main.scss build/styles/style.css --watch",
     "sass:build": "sass src/styles/main.scss build/styles/style.css",
-    "start": "gulp"
+    "gulp": "npm run gulp"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.5",
     "sass": "^1.86.3"
   },
   "devDependencies": {
-    "gulp": "^5.0.0",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-imagemin": "^9.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^5.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeanjusten/Espaco_WS.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jeanjusten/Espaco_WS/issues"
-  },
-  "homepage": "https://github.com/jeanjusten/Espaco_WS#readme",
-  "description": "",
-  "type": "module"
+  }
 }

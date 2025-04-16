@@ -1,5 +1,8 @@
 @use "./variables";
 
-h1 {
-    color: red;
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 64px;
 }
