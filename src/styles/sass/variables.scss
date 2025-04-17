@@ -1,22 +1,31 @@
 // Primary Colors
-$primaryColor: #d33509; 
+$primaryColor: #edd068;
 $secondaryColor: #f8ed52; 
 // Body Colors
-$bodyColorPrimary: #3b3b3b; 
-$bodyColorSecondary: #252221; 
+$bodyColorPrimary: white;
+$bodyColorSecondary: #1a1a1a; 
 // Text Colors
-$textColor: white;
-$textColorSec: black;
+$textColor: black;
+$textColorSec: white;
+$textColorAlternate: #6a6a6a;
 // Fonts
-$mainFont: "Arial", sans-serif;
-$secondaryFont: "Arial", sans-serif;
+$mainFont: "Special Gothic Condensed One", sans-serif;
+$secondaryFont: "Oswald", sans-serif;
 // Header Colors
 $headerColor: transparent;
 // Button Colors
-$buttonColor: gold;
-$buttonColorHover: #92853f;
+$buttonColor: #edd068;
+$buttonColorHover: #fcd856;
+$buttonColorHero: #000000;
+$buttonColorHeroHover: #ffffff;
 // Scroll Colors
-$colorScroll: red;
-$colorScrollBg: green;
-$colorScrollThumb: #f1f1f1;
-$colorScrollThumbHover: #1f1f1f;
+$colorScroll: #000000;
+$colorScrollBg: #1a1a1a; 
+$colorScrollThumb: #000000;
+$colorScrollThumbHover: #3b3b3b;
+// Footer Colors
+$colorFooterPrimary: #e9e9e9;
+$colorFooterSec: #5d5d5d;
+$devbyColor: #fbfbfb;
+$devbyColorHover: #2e86f3;
+$svgColor: black;

@@ -1,0 +1,85 @@
+@use "../variables";
+
+#info {
+    background-color: variables.$colorFooterPrimary;
+    border-bottom: 3px solid !important;
+    border-color: variables.$colorFooterSec !important;
+}
+
+.follow-us-footer {
+    color: variables.$primaryColor;
+}
+
+#info-container {
+    background-color: variables.$colorFooterPrimary;
+    color: variables.$textColorSec;
+    border-color: variables.$colorFooterPrimary;
+}
+
+#footer-foot-note {
+    background-color: variables.$colorFooterPrimary;
+    padding-bottom: 1rem;
+}
+
+.footer-menu1 p a:hover {
+    color: variables.$primaryColor;
+}
+
+#footer-info {
+    text-align: center;
+}
+
+#footer-logo {
+    max-height: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-logo:hover {
+    transform: scale(1.05);
+}
+
+#footer-social-links a svg {
+    text-decoration: none !important;
+}
+
+#footer-social-links a svg {
+    color: variables.$svgColor;
+    margin-left: 10px !important;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-social-links a svg:hover {
+    color: variables.$buttonColorHover;
+}
+
+#footer-social-links a {
+    text-decoration: none; 
+    margin-right: 5px;
+}
+
+.contact-footer {
+    vertical-align: center !important;
+    align-items: center;
+    align-content: center;
+}
+
+#footer-foot-note {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+#footer-developed-by {
+    font-weight: bold;
+}
+
+#footer-developed-by a {
+    color: variables.$devbyColor;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-developed-by a:hover {
+    color: variables.$devbyColorHover;
+    text-decoration: underline;
+}

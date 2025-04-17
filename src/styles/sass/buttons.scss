@@ -1,0 +1,42 @@
+@use "./variables";
+@use "./mixins/mixins";
+
+.btn {
+    @include mixins.border-radius(22px);
+    color: variables.$textColor;
+    background-color: transparent;
+    outline: variables.$textColor;
+    border: 3.5px solid variables.$textColor;
+    transition: ease-in-out 0.5s;
+    backdrop-filter: blur(10px);
+
+    &:hover {
+        background-color: variables.$buttonColorHero;
+        outline: variables.$buttonColorHero;
+        border: 3.5px solid variables.$textColor;
+        backdrop-filter: blur(10px) !important;
+        color: variables.$textColorSec;
+    }
+}
+
+.btn-primary {
+    box-shadow: none !important;
+    outline: variables.$textColor;
+    background-color: transparent;
+    border: 3.5px solid variables.$textColor;
+    backdrop-filter: blur(10px) !important;
+}
+
+.btn,
+.btn-primary {
+  &:focus,
+  &:active,
+  &:focus-visible {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: variables.$textColor !important;
+    border-color: variables.$textColor !important;
+    pointer-events: none !important;
+  }
+}

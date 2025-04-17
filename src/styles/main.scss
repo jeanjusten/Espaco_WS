@@ -6,7 +6,10 @@
 @use "./sass/buttons";
 @use "./sass/body";
 @use "./sass/header";
-@use "./sass/hero";
+@use "./sass/sections/home";
+@use "./sass/sections/produtos";
+
+@use "./sass/sections/footer";
 
 // Bootstrap Overwrite Variables
 // Text Color

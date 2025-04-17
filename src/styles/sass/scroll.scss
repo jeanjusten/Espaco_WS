@@ -1,0 +1,24 @@
+@use "./variables";
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: variables.$colorScroll variables.$colorScrollBg !important;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: variables.$colorScrollBg !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: variables.$primaryColor !important;
+    border-radius: 10px;
+    border: 2px solid variables.$colorScrollThumb;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: variables.$colorScrollThumbHover
+}

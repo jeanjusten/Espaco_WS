@@ -1,0 +1,85 @@
+@use "../variables";
+
+#home {
+    background-color: white;
+}
+
+.store-motto {
+    font-family: variables.$secondaryFont;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.hero-cta {
+    letter-spacing: 3px;
+}
+
+.motto-description {
+    color: variables.$textColorAlternate !important;
+}
+
+.c-item {
+    height: calc(100svh - 57px);
+}
+
+.c-img {
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: top left;
+    //filter: brightness(0.6);
+}
+
+.logo-store {
+    max-width: 175px;
+    margin-top: 3.5rem;
+}
+
+#hero-carousel .carousel-item {
+    position: relative;
+}
+  
+#hero-carousel .carousel-caption {
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption p {
+        max-width: 100%;
+    }
+
+    .carousel-caption {
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+    .carousel-caption p {
+        max-width: 75%;
+    }
+
+    .carousel-caption {
+        margin-left: 5rem;
+    }
+
+    .logo-store {
+        margin-left: 6rem;
+    }
+}
+
+@media (min-width: 1021px) {
+    .carousel-caption p {
+        max-width: 44%;
+    }
+
+    .carousel-caption {
+        margin-left: 7rem;
+    }
+
+    .logo-store {
+        margin-left: 8rem;
+    }
+}
