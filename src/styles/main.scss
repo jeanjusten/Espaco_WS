@@ -7,12 +7,14 @@
 @use "./sass/body";
 @use "./sass/header";
 @use "./sass/sections/home";
+@use "./sass/sections/destaque";
 @use "./sass/sections/produtos";
-
+@use "./sass/sections/novidades";
+@use "./sass/sections/contato";
 @use "./sass/sections/footer";
 
 // Bootstrap Overwrite Variables
 // Text Color
 body, html, h1, h2, h3, h4, h5, h6, p, span, a, li, ul {
-    color: variables.$textColor !important;
+    color: variables.$textColor;
 }

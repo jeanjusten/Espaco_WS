@@ -2,6 +2,23 @@
 
 #produtos {
     background-color: variables.$bodyColorSecondary;
+    
+    span, p {
+      color: variables.$textColorSec !important;
+  }
+}
+
+.h2-white {
+  color: variables.$textColor !important;
+  font-family: variables.$mainFont;
+  letter-spacing: 4px;
+  background-color: variables.$primaryColor;
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    border-radius: 25px;
+    letter-spacing: 10px;
+  }
 }
 
 .container-trending {

@@ -235,8 +235,42 @@ header {
     margin-left: 8rem;
   }
 }
+#destaque {
+  background-color: #1a1a1a;
+}
+#destaque span, #destaque p {
+  color: white !important;
+}
+
+.container-featured {
+  max-width: 900px;
+}
+.container-featured a {
+  width: 100%;
+}
+.container-featured img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
 #produtos {
   background-color: #1a1a1a;
+}
+#produtos span, #produtos p {
+  color: white !important;
+}
+
+.h2-white {
+  color: black !important;
+  font-family: "Special Gothic Condensed One", sans-serif;
+  letter-spacing: 4px;
+  background-color: #edd068;
+  transition: ease-in-out 0.5s;
+}
+.h2-white:hover {
+  border-radius: 25px;
+  letter-spacing: 10px;
 }
 
 .container-trending {
@@ -284,14 +318,28 @@ header {
   filter: grayscale(0%) blur(0) brightness(0.6);
 }
 
+#novidades {
+  background-color: #1a1a1a;
+}
+#novidades span, #novidades p {
+  color: white !important;
+}
+
+#contato {
+  background-color: #1a1a1a;
+}
+#contato span, #contato p {
+  color: white !important;
+}
+
 #info {
   background-color: #e9e9e9;
   border-bottom: 3px solid !important;
-  border-color: #5d5d5d !important;
+  border-color: #000000 !important;
 }
 
 .follow-us-footer {
-  color: #edd068;
+  color: black;
 }
 
 #info-container {
@@ -322,23 +370,24 @@ header {
   transform: scale(1.05);
 }
 
-#footer-social-links a svg {
-  text-decoration: none !important;
+.text-reset {
+  transition: ease-in-out 0.2s;
 }
-
-#footer-social-links a svg {
-  color: black;
-  margin-left: 10px !important;
-  transition: 0.5s ease-in-out;
-}
-
-#footer-social-links a svg:hover {
-  color: #fcd856;
+.text-reset:hover {
+  color: #edd068 !important;
 }
 
 #footer-social-links a {
   text-decoration: none;
   margin-right: 5px;
+  transition: ease-in-out 0.2s;
+}
+#footer-social-links a:hover {
+  color: #edd068;
+}
+#footer-social-links asvg {
+  color: black;
+  margin-left: 10px !important;
 }
 
 .contact-footer {
@@ -369,7 +418,7 @@ header {
 }
 
 body, html, h1, h2, h3, h4, h5, h6, p, span, a, li, ul {
-  color: black !important;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

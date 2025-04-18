@@ -7,7 +7,7 @@
 }
 
 .follow-us-footer {
-    color: variables.$primaryColor;
+    color: variables.$textColor;
 }
 
 #info-container {
@@ -38,23 +38,27 @@
     transform: scale(1.05);
 }
 
-#footer-social-links a svg {
-    text-decoration: none !important;
-}
+.text-reset {
+    transition: ease-in-out 0.2s;
 
-#footer-social-links a svg {
-    color: variables.$svgColor;
-    margin-left: 10px !important;
-    transition: 0.5s ease-in-out;
-}
-
-#footer-social-links a svg:hover {
-    color: variables.$buttonColorHover;
+    &:hover {
+        color: variables.$primaryColor !important;
+    }
 }
 
 #footer-social-links a {
     text-decoration: none; 
     margin-right: 5px;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+        color: variables.$primaryColor;
+    }
+
+    &svg {
+        color: variables.$svgColor;
+        margin-left: 10px !important;
+    }
 }
 
 .contact-footer {

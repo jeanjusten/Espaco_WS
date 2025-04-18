@@ -1,0 +1,9 @@
+@use "../variables";
+
+#contato {
+    background-color: variables.$bodyColorSecondary;
+    
+    span, p {
+        color: variables.$textColorSec !important;
+    }
+}
