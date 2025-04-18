@@ -1,9 +1,35 @@
 @use "../variables";
+@use "../mixins/mixins";
 
 #novidades {
     background-color: variables.$bodyColorSecondary;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     
-    span, p {
+    h3 {
+        color: variables.$textColor !important;
+    }
+
+    span, p, h1, h2, h4, h4, h6 {
         color: variables.$textColorSec !important;
     }
 }
+
+.container-newclothing {
+    @include mixins.containerWidth();
+
+    .container-left-featured {
+        max-width: 450px;
+    
+        img {
+            
+            max-width: 100%;
+        }
+    }
+    
+    .container-right-featured {
+        max-width: 450px;
+    }
+}
+
+
+

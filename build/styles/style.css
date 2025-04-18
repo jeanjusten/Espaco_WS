@@ -33,6 +33,14 @@
   backdrop-filter: blur(10px) !important;
 }
 
+.btn-secondary {
+  box-shadow: none !important;
+  outline: white;
+  background-color: transparent;
+  border: 3.5px solid white;
+  backdrop-filter: blur(10px) !important;
+}
+
 .btn:focus, .btn:active, .btn:focus-visible,
 .btn-primary:focus,
 .btn-primary:active,
@@ -42,6 +50,37 @@
   box-shadow: none !important;
   color: black !important;
   border-color: black !important;
+  pointer-events: none !important;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: transparent;
+  outline: white;
+  border: 3.5px solid white;
+  transition: ease-in-out 0.5s;
+  backdrop-filter: blur(10px);
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+.btn-secondary:hover {
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  background-color: #edd068;
+  outline: #edd068;
+  border: 3.5px solid #edd068;
+  backdrop-filter: blur(10px) !important;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.btn-secondary:focus, .btn-secondary:active, .btn-secondary:focus-visible {
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: white !important;
+  border-color: white !important;
   pointer-events: none !important;
 }
 
@@ -238,8 +277,11 @@ header {
 #destaque {
   background-color: #1a1a1a;
 }
-#destaque span, #destaque p {
-  color: white !important;
+#destaque h3 {
+  color: black !important;
+}
+#destaque span, #destaque p, #destaque h1, #destaque h2, #destaque h4, #destaque h4, #destaque h6 {
+  color: black !important;
 }
 
 .container-featured {
@@ -257,8 +299,11 @@ header {
 #produtos {
   background-color: #1a1a1a;
 }
-#produtos span, #produtos p {
-  color: white !important;
+#produtos h3 {
+  color: black !important;
+}
+#produtos span, #produtos p, #produtos h1, #produtos h2, #produtos h4, #produtos h4, #produtos h6 {
+  color: black !important;
 }
 
 .h2-white {
@@ -274,16 +319,16 @@ header {
 }
 
 .container-trending {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .trending-products-top {
-  max-width: 400px;
+  max-width: 450px;
   object-fit: contain;
 }
 
 .trending-products-bottom {
-  max-width: 260px;
+  max-width: 300px;
 }
 
 .trending-products-top,
@@ -320,16 +365,50 @@ header {
 
 #novidades {
   background-color: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-#novidades span, #novidades p {
+#novidades h3 {
+  color: black !important;
+}
+#novidades span, #novidades p, #novidades h1, #novidades h2, #novidades h4, #novidades h4, #novidades h6 {
   color: white !important;
+}
+
+.container-newclothing {
+  max-width: 900px;
+}
+.container-newclothing .container-left-featured {
+  max-width: 450px;
+}
+.container-newclothing .container-left-featured img {
+  max-width: 100%;
+}
+.container-newclothing .container-right-featured {
+  max-width: 450px;
 }
 
 #contato {
   background-color: #1a1a1a;
 }
-#contato span, #contato p {
+#contato h3 {
+  color: black !important;
+}
+#contato span, #contato p, #contato h1, #contato h2, #contato h4, #contato h4, #contato h6 {
   color: white !important;
+}
+
+.container-contact {
+  max-width: 900px;
+}
+.container-contact .container-left-contact {
+  max-width: 450px;
+}
+.container-contact .container-right-contact {
+  max-width: 450px;
+}
+.container-contact .container-right-contact .embed-map {
+  max-height: 400px;
+  max-width: 400px;
 }
 
 #info {

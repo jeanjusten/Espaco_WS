@@ -1,15 +1,20 @@
 @use "../variables";
+@use "../mixins/mixins";
 
 #destaque {
     background-color: variables.$bodyColorSecondary;
 
-    span, p {
-        color: variables.$textColorSec !important;
+    h3 {
+        color: variables.$textColor !important;
+      }
+  
+      span, p, h1, h2, h4, h4, h6 {
+        color: variables.$textColor !important;
     }
 }
 
 .container-featured {
-    max-width: 900px;
+    @include mixins.containerWidth();
     
     a {
         width: 100%;

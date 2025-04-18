@@ -27,6 +27,14 @@
     backdrop-filter: blur(10px) !important;
 }
 
+.btn-secondary {
+  box-shadow: none !important;
+  outline: variables.$textColorSec;
+  background-color: transparent;
+  border: 3.5px solid variables.$textColorSec;
+  backdrop-filter: blur(10px) !important;
+}
+
 .btn,
 .btn-primary {
   &:focus,
@@ -37,6 +45,39 @@
     box-shadow: none !important;
     color: variables.$textColor !important;
     border-color: variables.$textColor !important;
+    pointer-events: none !important;
+  }
+}
+
+.btn-secondary {
+  color: variables.$textColorSec;
+  background-color: transparent;
+  outline: variables.$textColorSec;
+  border: 3.5px solid variables.$textColorSec;
+  transition: ease-in-out 0.5s;
+  backdrop-filter: blur(10px);
+  padding: 5px 15px;
+  text-transform: uppercase;
+
+  &:hover {
+      @include mixins.border-radius(22px);
+      background-color: variables.$buttonColor;
+      outline: variables.$buttonColor;
+      border: 3.5px solid variables.$buttonColor;
+      backdrop-filter: blur(10px) !important;
+      color: variables.$textColor;
+      font-weight: bolder;
+      letter-spacing: 2px;
+  }
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: variables.$textColorSec !important;
+    border-color: variables.$textColorSec !important;
     pointer-events: none !important;
   }
 }

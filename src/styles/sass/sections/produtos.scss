@@ -1,10 +1,15 @@
 @use "../variables";
+@use "../mixins/mixins";
 
 #produtos {
     background-color: variables.$bodyColorSecondary;
     
-    span, p {
-      color: variables.$textColorSec !important;
+    h3 {
+      color: variables.$textColor !important;
+    }
+
+    span, p, h1, h2, h4, h4, h6 {
+      color: variables.$textColor !important;
   }
 }
 
@@ -22,16 +27,16 @@
 }
 
 .container-trending {
-    max-width: 700px;
+    @include mixins.containerWidth();
 }
 
 .trending-products-top {
-    max-width: 400px;
+    max-width: 450px;
     object-fit: contain;
 }
 
 .trending-products-bottom {
-    max-width: 260px;
+    max-width: 300px;
 }
 
 .trending-products-top,
