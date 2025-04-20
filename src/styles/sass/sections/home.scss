@@ -34,14 +34,16 @@
 }
 
 .logo-store {
-    max-width: 175px;
+    max-width: 195px;
     margin-top: 3.5rem;
+    align-self: center;
+    justify-self: center;
 }
 
 #hero-carousel .carousel-item {
     position: relative;
 }
-  
+
 #hero-carousel .carousel-caption {
     position: absolute;
     left: 0;

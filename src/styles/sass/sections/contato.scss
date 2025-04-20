@@ -6,15 +6,16 @@
     
     h3 {
         color: variables.$textColor !important;
-      }
-  
-      span, p, h1, h2, h4, h4, h6 {
+    }
+
+    span, p, h1, h2, h4, h4, h6 {
         color: variables.$textColorSec !important;
     }
 }
 
 .container-contact {
     @include mixins.containerWidth();
+    padding-left: 0px;
 
     .container-left-contact {
         max-width: 450px;
@@ -24,10 +25,26 @@
         max-width: 450px;
 
         .embed-map {
-            max-height: 400px;
-            max-width: 400px;
+            height: 355px;
+            width: 100%;
+            max-width: 450px;
+            margin-right: 20px;
         }
     }
 }
 
+#contact-social-links a {
+    text-decoration: none; 
+    margin-right: 5px;
+    transition: ease-in-out 0.2s;
+
+    & svg {
+        color: variables.$svgColorSec;
+        margin-right: 10px !important;
+
+        &:hover {
+            color: variables.$svgColorHover;
+        }
+    }
+}
 

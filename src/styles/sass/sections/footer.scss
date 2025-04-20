@@ -4,15 +4,17 @@
     background-color: variables.$colorFooterPrimary;
     border-bottom: 3px solid !important;
     border-color: variables.$colorFooterSec !important;
+    color: variables.$colorFooterText;
 }
 
 .follow-us-footer {
-    color: variables.$textColor;
+    color: variables.$colorFooterSec;
 }
 
 #info-container {
+    //border-bottom: 2px solid variables.$colorFooterBorder !important;
     background-color: variables.$colorFooterPrimary;
-    color: variables.$textColorSec;
+    color: variables.$colorFooterText;
     border-color: variables.$colorFooterPrimary;
 }
 
@@ -21,12 +23,19 @@
     padding-bottom: 1rem;
 }
 
-.footer-menu1 p a:hover {
-    color: variables.$primaryColor;
+.footer-menu1, 
+.footer-menu1 p, 
+.footer-menu1 a,
+#footer-foot-note span {
+    color: variables.$colorFooterText !important;
 }
 
 #footer-info {
     text-align: center;
+
+    p {
+        color: variables.$colorFooterSec;
+    }
 }
 
 #footer-logo {
@@ -51,13 +60,13 @@
     margin-right: 5px;
     transition: ease-in-out 0.2s;
 
-    &:hover {
-        color: variables.$primaryColor;
-    }
-
-    &svg {
+    & svg {
         color: variables.$svgColor;
         margin-left: 10px !important;
+
+        &:hover {
+            color: variables.$svgColorHover;
+        }
     }
 }
 
@@ -65,12 +74,15 @@
     vertical-align: center !important;
     align-items: center;
     align-content: center;
+    color: variables.$colorFooterText;
 }
 
 #footer-foot-note {
+    color: variables.$colorFooterText;
     display: flex;
     font-weight: bold;
     justify-content: space-around;
+    
 }
 
 #footer-developed-by {
