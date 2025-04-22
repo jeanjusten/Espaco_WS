@@ -13,9 +13,35 @@
     }
 }
 
+.container-contact-banner {
+    @include mixins.containerWidth();
+
+    & img {
+        width: 100%;
+    }
+}
+
+#store-carousel .carousel-item {
+    position: relative;
+}
+
+.c-item-store {
+    @include mixins.containerWidth();
+}
+
+.c-img-store {
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    //filter: brightness(0.6);
+}
+
 .container-contact {
     @include mixins.containerWidth();
     padding-left: 0px;
+    padding-right: 0px;
 
     .container-left-contact {
         max-width: 450px;
@@ -47,4 +73,3 @@
         }
     }
 }
-

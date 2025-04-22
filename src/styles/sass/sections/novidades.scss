@@ -16,6 +16,8 @@
 
 .container-newclothing {
     @include mixins.containerWidth();
+    padding-left: 0px;
+    padding-right: 0px;
 
     .container-left-featured {
         max-width: 450px;

@@ -8,4 +8,6 @@
 
 @mixin containerWidth($maxContainerWidth:900px) {
     max-width: $maxContainerWidth;
+    padding-left: 0px;
+    padding-right: 0px;
 }

@@ -95,7 +95,7 @@ body {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #edd068 #1a1a1a !important;
+  scrollbar-color: #000000 #ffffff !important;
 }
 
 ::-webkit-scrollbar {
@@ -103,7 +103,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a !important;
+  background: #ffffff !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -312,6 +312,8 @@ header {
 
 .container-featured {
   max-width: 900px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .container-featured a {
   width: 100%;
@@ -322,6 +324,31 @@ header {
   object-position: center bottom;
 }
 
+.ticker-container {
+  background-color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ticker-carousel {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-text 40s linear infinite;
+  font-size: 14px;
+}
+.ticker-carousel span {
+  color: white;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 #produtos {
   background-color: #1a1a1a;
 }
@@ -346,6 +373,8 @@ header {
 
 .container-trending {
   max-width: 900px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .trending-products-top {
@@ -402,6 +431,10 @@ header {
 
 .container-newclothing {
   max-width: 900px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .container-newclothing .container-left-featured {
   max-width: 450px;
@@ -424,9 +457,39 @@ header {
   color: white !important;
 }
 
+.container-contact-banner {
+  max-width: 900px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container-contact-banner img {
+  width: 100%;
+}
+
+#store-carousel .carousel-item {
+  position: relative;
+}
+
+.c-item-store {
+  max-width: 900px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c-img-store {
+  align-items: center;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .container-contact {
   max-width: 900px;
   padding-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .container-contact .container-left-contact {
   max-width: 450px;

@@ -87,7 +87,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active c-item">
                         <img src="./build/dist/img/banner_hero.webp" draggable="false" alt="Modelo fashion com bolsa" class="d-block w-100 c-img" loading="lazy" draggable="false">
-                        <div class="carousel-caption top-0 mt-5 text-sm-center text-md-start">
+                        <div class="carousel-caption top-0 mt-1 text-sm-center text-md-start">
                             <img src="./build/dist/img/logo_full.webp" class="img-fluid logo-store mt-5 pt-5" draggable="false" loading="lazy" alt="Espaço WS Logo"> <!--Logo-->
                             <h1 class="display-6 fw-bolder text-uppercase store-motto mt-3 text-sm-center text-md-start pb-0 mb-0">Seu estilo de todo dia</h1>
                             <p class="mt-0 pt-0 fs-5 fs-sm-4 fs-md-1 mb-0 text-sm-center text-md-start motto-description">
@@ -115,6 +115,16 @@
                 </div>
             </div>   
         </main>
+
+        <!--INFINITE BLACK LINE CAROUSEL-->
+        <div class="ticker-container">
+            <div class="ticker-carousel">
+                <span>| 🚚 Frete grátis nas compras acima de R$199                  | 🎁 Primeira troca grátis                  | 💳 Parcele em até 6x sem juros                  </span>
+                <span>| 🚚 Frete grátis nas compras acima de R$199                  | 🎁 Primeira troca grátis                  | 💳 Parcele em até 6x sem juros                  </span>
+                <span>| 🚚 Frete grátis nas compras acima de R$199                  | 🎁 Primeira troca grátis                  | 💳 Parcele em até 6x sem juros                  </span>
+                <span>| 🚚 Frete grátis nas compras acima de R$199                  | 🎁 Primeira troca grátis                  | 💳 Parcele em até 6x sem juros                  </span>
+            </div>
+        </div>
 
         <!--FEATURED SECTION-->
         <section id="destaque" class="pt-5 pb-5">
@@ -166,9 +176,9 @@
             <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
                 <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Novidades</h3>
             </div>
-            <div class="container container-newclothing d-sm-block d-md-flex flex-row mx-auto gap-5 justify-content-center">
-                <div class="container-left-featured mx-auto">
-                    <img src="./build/dist/img/product_2.webp" class="img-fluid mb-3 mb-md-0 align-self-center px-0 mx-0" draggable="false" alt="Roupa em destaque">
+            <div class="container container-newclothing d-sm-block d-md-flex flex-row mx-auto gap-5 justify-content-evenly">
+                <div class="container-left-featured mx-auto px-0">
+                    <img src="./build/dist/img/product_2.webp" class="img-fluid mb-3 mb-md-0 align-self-center" draggable="false" alt="Roupa em destaque">
                 </div>
                 <div class="container-right-featured mx-auto m-md-3 text-center text-md-end">
                     <h2>
@@ -191,8 +201,29 @@
             <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
                 <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Contato</h3>
             </div>
-            <div class="container container-contact d-sm-block d-md-flex flex-row mx-auto gap-5 justify-content-center">
-                <div class="container-left-contact mx-sm-auto m-md-3 text-center text-md-start">
+            <!--Store photos carousel-->
+            <div class="container container-contact-banner mx-auto justify-content-center">
+                <div id="store-carousel" class="carousel slide carousel-fade pb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active c-item-store align-items-center">
+                            <img src="./build/dist/img/banner_hero.webp" draggable="false" alt="Modelo fashion com bolsa" class="d-block w-100 c-img-store" loading="lazy" draggable="false">
+                        </div>
+                        <div class="carousel-item c-item-store">
+                            <img src="./build/dist/img/banner_hero.webp" draggable="false" alt="Modelo fashion com bolsa" class="d-block w-100 c-img-store" loading="lazy" draggable="false">
+                        </div>
+                        <div class="carousel-item c-item-store">
+                            <img src="./build/dist/img/banner_hero.webp" draggable="false" alt="Modelo fashion com bolsa" class="d-block w-100 c-img-store" loading="lazy" draggable="false">
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="container container-contact d-sm-block d-md-flex flex-row mx-auto gap-5 justify-content-between">
+                <div class="container-left-contact mx-sm-auto m-md-3 text-center text-md-start mx-auto">
                     <h2 class="text-sm-center text-md-start">
                         Como nos encontrar?
                     </h2>
@@ -222,7 +253,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="container-right-contact mx-auto">
+                <div class="container-right-contact mx-auto mt-2">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.9767052016425!2d-50.383927397648065!3d-25.871010745400742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e7a2dc738992ad%3A0x47d20fc5f52fc809!2sR.%20Ten.%20Max%20Wolf%20Filho%2C%20436%20-%20S%C3%A3o%20Mateus%20do%20Sul%2C%20PR%2C%2083900-000!5e0!3m2!1sen!2sbr!4v1745012573701!5m2!1sen!2sbr" class="embed-map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
