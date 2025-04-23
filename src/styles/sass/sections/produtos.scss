@@ -5,29 +5,30 @@
     background-color: variables.$bodyColorSecondary;
     
     h3 {
-      color: variables.$textColor !important;
+        color: variables.$textColor !important;
     }
 
     span, p, h1, h2, h4, h4, h6 {
-      color: variables.$textColor !important;
+        color: variables.$textColor !important;
   }
 }
 
 .h2-white {
-  color: variables.$textColor !important;
-  font-family: variables.$mainFont;
-  letter-spacing: 4px;
-  background-color: variables.$primaryColor;
-  transition: ease-in-out 0.5s;
+    color: variables.$textColor !important;
+    font-family: variables.$mainFont;
+    letter-spacing: 4px;
+    background-color: variables.$primaryColor;
+    transition: ease-in-out 0.5s;
 
   &:hover {
-    border-radius: 25px;
-    letter-spacing: 10px;
+        border-radius: 25px;
+        letter-spacing: 10px;
   }
 }
 
 .container-trending {
     @include mixins.containerWidth();
+    padding: 0px;
 }
 
 .trending-products-top {
@@ -41,32 +42,32 @@
 
 .trending-products-top,
 .trending-products-bottom {
-  position: relative; 
-  display: block;
-  overflow: hidden;
+    position: relative; 
+    display: block;
+    overflow: hidden;
 
-  img {
-    filter: grayscale(100%) blur(2px) brightness(0.6);
-    transition: filter 0.5s ease-in-out;
-    width: 100%;
-    height: auto;
-  }
+    img {
+        filter: blur(0) brightness(0.6);
+        transition: filter 0.5s ease-in-out;
+        width: 100%;
+        height: auto;
 
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: variables.$textColorSec;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    z-index: 1;
-    pointer-events: none;
-    text-transform: uppercase;
-  }
+        &:hover {
+          filter: grayscale(0%) blur(2px) brightness(0.3);
+        }
+    }
 
-  &:hover img {
-    filter: grayscale(0%) blur(0) brightness(0.6);
-  }
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: variables.$textColorSec;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        z-index: 1;
+        pointer-events: none;
+        text-transform: uppercase;
+    }
 }

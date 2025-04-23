@@ -8,21 +8,99 @@
         color: variables.$textColor !important;
       }
   
-      span, p, h1, h2, h4, h4, h6 {
+    p, h1, h2, h4, h4, h6 {
         color: variables.$textColor !important;
     }
 }
 
 .container-featured {
     @include mixins.containerWidth();
+    padding: 0px;
+    position: relative;
     
-    a {
+    .container-featured-img {
         width: 100%;
+
+        .span-header {
+            font-weight: bolder;
+            position: absolute;
+            padding: 25px;
+            top: 30px;
+            left: 60px;
+            text-transform: uppercase;
+            color: variables.$textColorSec;
+            text-wrap: pretty;
+            z-index: 2;
+
+            @media (max-width: 560px) {
+                font-size: 3.2rem; 
+                line-height: 3.2rem;
+            }
+
+            @media (min-width: 561px) and (max-width: 760px) {
+                font-size: 4rem; 
+                line-height: 4rem;
+            }
+
+            @media (min-width: 761px) and (max-width: 960px) {
+                font-size: 6rem; 
+                line-height: 6rem;
+            }
+
+            @media (min-width: 961px) {
+                font-size: 9rem; 
+                line-height: 8rem;
+            }
+
+            .span-text {
+                font-weight: bolder;
+                position: absolute;
+                padding-left: 5px;
+                padding-top: 10px;
+                line-height: 5px;
+                text-transform: uppercase;
+                color: variables.$textColorSec;
+                text-wrap: pretty;
+                z-index: 2;
+
+                @media (max-width: 560px) {
+                    font-size: 1rem; 
+                }
+    
+                @media (min-width: 561px) and (max-width: 760px) {
+                    font-size: 1rem; 
+                }
+    
+                @media (min-width: 761px) and (max-width: 960px) {
+                    font-size: 2rem; 
+                }
+    
+                @media (min-width: 961px) {
+                    font-size: 2.2rem; 
+                    line-height: 28px;
+                }
+            }
+
+            a {
+                z-index: 5;
+            }
+        }
     }
 
-    img {
+    .img-discount-bg {
         width: 100%;
         object-fit: cover;
         object-position: center bottom;
+        filter: brightness(0.6);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .img-discount-abs {
+        position: absolute;
+        max-height: 100%;
+        bottom: 0;
+        left: 55%;
+        z-index: 3;
     }
 }

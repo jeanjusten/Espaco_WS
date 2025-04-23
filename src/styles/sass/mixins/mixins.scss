@@ -6,8 +6,6 @@
     border-radius: $radius;
 }
 
-@mixin containerWidth($maxContainerWidth:900px) {
+@mixin containerWidth($maxContainerWidth:1000px) {
     max-width: $maxContainerWidth;
-    padding-left: 0px;
-    padding-right: 0px;
 }

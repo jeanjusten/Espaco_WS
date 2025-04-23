@@ -11,7 +11,7 @@ const whatsappApi = `https://wa.me/${formattedWhatsappNumber}?text=${encodeURICo
 // Instagram Link
 const instagramLink = "https://www.instagram.com/espaco_ws/";
 // CNPJ
-const cnpjNumber = "0000000-000";
+const cnpjNumber = "43.230.031/0001-41";
 const cnpj = `CNPJ<br>${cnpjNumber}`;
 
 // CNPJ 
