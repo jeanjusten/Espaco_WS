@@ -147,7 +147,7 @@ body {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #0c0c0c #3b3b3b !important;
+  scrollbar-color: #ffffff #1a1a1a !important;
 }
 
 ::-webkit-scrollbar {
@@ -155,7 +155,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #3b3b3b !important;
+  background: #1a1a1a !important;
 }
 
 ::-webkit-scrollbar-thumb {
