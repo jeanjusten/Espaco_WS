@@ -298,7 +298,7 @@ header {
 
 .logo-store {
   max-width: 195px;
-  padding-top: 6rem;
+  padding-top: 4rem;
   align-self: center;
   justify-self: center;
 }
@@ -452,6 +452,7 @@ header {
   bottom: 0;
   left: 56%;
   z-index: 3;
+  overflow-x: hidden;
 }
 
 .ticker-container {
