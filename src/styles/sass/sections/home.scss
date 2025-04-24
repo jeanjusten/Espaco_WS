@@ -49,6 +49,13 @@
     left: 0;
 }
 
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+}
+
 @media (max-width: 767px) {
     .carousel-caption p {
         max-width: 100%;
@@ -60,6 +67,11 @@
 
     .logo-store {
         margin-left: auto;
+    }
+
+    .hero-header {
+        flex-direction: column; 
+        gap: 1rem;
     }
 }
 
@@ -75,6 +87,10 @@
     .logo-store {
         margin-left: 7rem;
     }
+
+    .hero-header {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1021px) {
@@ -88,5 +104,9 @@
 
     .logo-store {
         margin-left: 8rem;
+    }
+
+    .hero-header {
+        flex-direction: row;
     }
 }
