@@ -3,6 +3,7 @@
 
 #destaque {
     background-color: variables.$bodyColorSecondary;
+    overflow: hidden !important;
 
     h3 {
         color: variables.$textColor !important;
@@ -106,6 +107,6 @@
         bottom: 0;
         left: 56%;
         z-index: 3;
-        overflow-x: hidden;
+        overflow: hidden !important;
     }
 }
