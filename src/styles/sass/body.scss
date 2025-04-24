@@ -4,6 +4,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    max-width: 100vw !important;
     overflow-x: hidden !important;
     overflow-y: auto;
     background-color: variables.$bodyColorPrimary;
