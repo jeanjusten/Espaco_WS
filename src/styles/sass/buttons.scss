@@ -29,16 +29,16 @@
 
 .btn,
 .btn-primary {
-  &:focus,
-  &:active,
-  &:focus-visible {
+    &:focus,
+    &:active,
+    &:focus-visible {
         background-color: transparent !important;
         outline: none !important;
         box-shadow: none !important;
         color: variables.$textColor !important;
         border-color: variables.$textColor !important;
         pointer-events: none !important;
-  }
+    }
 }
 
 .btn-secondary {
@@ -51,7 +51,7 @@
     padding: 5px 15px;
     text-transform: uppercase;
 
-  &:hover {
+    &:hover {
         @include mixins.border-radius(22px);
         background-color: variables.$buttonColor;
         outline: variables.$buttonColor;
@@ -60,18 +60,18 @@
         color: variables.$textColor;
         font-weight: bolder;
         letter-spacing: 2px;
-  }
+}
 
-  &:focus,
-  &:active,
-  &:focus-visible {
+    &:focus,
+    &:active,
+    &:focus-visible {
         background-color: transparent !important;
         outline: none !important;
         box-shadow: none !important;
         color: variables.$textColorSec !important;
         border-color: variables.$textColorSec !important;
         pointer-events: none !important;
-  }
+    }
 }
 
 .btn-tertiary {
@@ -113,9 +113,9 @@
     }
 
     @media (min-width: 561px) and (max-width: 760px) {
-      font-size: 1rem; 
-      margin-top: 1rem;
-  }
+        font-size: 1rem; 
+        margin-top: 1.5rem;
+    }
 
     @media (min-width: 761px) {
         max-width: 300px;

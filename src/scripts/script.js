@@ -1,3 +1,9 @@
+// Prevents empty clicks on Whatsapp Links
+el.addEventListener('click', e => {
+    e.preventDefault();
+    window.open(whatsappApi, '_blank');
+});
+
 // Whatsapp Number
 const whatsappNumber = "+55 (42) XXXXX-XXXX"; 
 // Formated Number
@@ -24,7 +30,11 @@ document.getElementById("cnpj").innerHTML = cnpj;
     "contact-whatsapp-section",
     "contact-whatsapp-featured",
     "contact-whatsapp-svg",
-    "contact-whatsapp-footer"
+    "contact-whatsapp-footer",
+    "contact-whatsapp-new",
+    "contact-whatsapp-new-2",
+    "contact-whatsapp-new-3",
+    "contact-whatsapp-new-4"
 ].forEach(id => {
     const el = document.getElementById(id);
     if (el) {

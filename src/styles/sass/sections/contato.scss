@@ -31,20 +31,19 @@
 
 .c-item-store {
     @include mixins.containerWidth();
+    max-height: 460px;
 }
 
 .c-img-store {
     align-items: center;
-    height: auto;
-    max-width: 100%;
+    
+    width: 100%;
     object-fit: cover;
     object-position: center center;
-    //filter: brightness(0.6);
 }
 
 .container-contact {
     @include mixins.containerWidth();
-
     padding-right: 0px;
 
     .container-left-contact {
