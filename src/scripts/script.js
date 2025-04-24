@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Whatsapp Number
-    const whatsappNumber = "+55 (42) XXXXX-XXXX"; 
+    const whatsappNumber = "+55 (42) 98832-0810";
     // Formated Number
     const formattedWhatsappNumber = whatsappNumber.replace(/\D/g, "");
     // Message
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const whatsappApi = `https://wa.me/${formattedWhatsappNumber}?text=${encodeURIComponent(message)}`;
     const whatsappApiDiscount = `https://wa.me/${formattedWhatsappNumber}?text=${encodeURIComponent(messageDiscount)}`;
     // Whatsapp Group Number
-    const whatsappGroupNumber = ""
+    const whatsappGroupNumber = "GpJS2sdrn9nLfgy3IeEnpI"
     // Group Link
     const groupLink = `https://chat.whatsapp.com/${whatsappGroupNumber}`;
     // CNPJ Number
