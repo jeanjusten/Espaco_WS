@@ -9,3 +9,13 @@
 @mixin containerWidth($maxContainerWidth:1000px) {
     max-width: $maxContainerWidth;
 }
+
+@mixin borderRadiusTop($borderRadiusValue:30px) {
+    border-top-right-radius: $borderRadiusValue;
+    border-top-left-radius: $borderRadiusValue;
+}
+
+@mixin borderRadiusBottom($borderRadiusValue:30px) {
+    border-bottom-right-radius: $borderRadiusValue;
+    border-bottom-left-radius: $borderRadiusValue;
+}

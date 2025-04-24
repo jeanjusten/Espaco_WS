@@ -26,6 +26,12 @@ function webpImages() {
     .pipe(gulp.dest("build/dist/img")); 
 }
 
+export { 
+  css, 
+  js, 
+  webpImages
+};
+
 export default gulp.series(
   css,
   js,

@@ -97,8 +97,7 @@
         object-fit: cover;
         object-position: center top;
         filter: brightness(0.4);
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        @include mixins.borderRadiusTop();
     }
 
     .img-discount-abs {

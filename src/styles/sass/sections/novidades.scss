@@ -26,7 +26,8 @@
         max-width: 100%;
         justify-self: center;
         align-self: center;
-        border-radius: 30px;
+        @include mixins.borderRadiusTop();
+        @include mixins.borderRadiusBottom();
         width: 100%;
         height: 500px;
         object-fit: cover;
