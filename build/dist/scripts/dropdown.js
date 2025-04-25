@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll(".nav-link");let n=document.querySelector(".navbar-collapse");e.forEach(function(e){e.addEventListener("click",function(){setTimeout(function(){n.classList.contains("show")&&new bootstrap.Collapse(n).toggle()},1e3)})})});
