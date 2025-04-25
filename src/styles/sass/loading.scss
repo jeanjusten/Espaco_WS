@@ -9,33 +9,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: variables.$bodyColorPrimary;
+    background: variables.$loaderBgColor;
     z-index: 9999 !important;
     transition: opacity 0.75s, visibility 0.75s;
-
-    span {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: variables.$primaryColor; 
-        display: inline-block;
-        margin: 0 5px;
-        animation: bounce 0.6s infinite ease-in-out;
-
-        &:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        &:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-    }
+    gap: 10px;
 }
 
 .loader--hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+}
+
+.loader span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: variables.$loaderDotColor;
+    display: inline-block;
+    animation: bounce 0.6s infinite ease-in-out;
+}
+
+.loader span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.4s;
 }
 
 @keyframes bounce {
@@ -43,6 +46,6 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 }

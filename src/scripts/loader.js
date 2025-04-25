@@ -1,9 +1,12 @@
-// Page Loader - Fade out when Fully Loaded
+//Page Loader - Fade out when Fully Loaded
 window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
+    const loader = document.querySelector(".loader")
     loader.classList.add("loader--hidden");
 
-    loader.addEventListener("transitionend", () => {
-        loader.remove();
-    });
+    document.body.removeChild(document.body.firstChild);
+})
+
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('loader--hidden');
 });

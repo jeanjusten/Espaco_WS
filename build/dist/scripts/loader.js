@@ -1,1 +1,1 @@
-window.addEventListener("load",()=>{let e=document.querySelector(".loader");e.classList.add("loader--hidden"),e.addEventListener("transitionend",()=>{e.remove()})});
+window.addEventListener("load",()=>{document.querySelector(".loader").classList.add("loader--hidden"),document.body.removeChild(document.body.firstChild)}),window.addEventListener("load",()=>{document.querySelector(".loader").classList.add("loader--hidden")});
