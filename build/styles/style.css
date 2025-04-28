@@ -382,6 +382,12 @@ header {
   .carousel-caption p {
     max-width: 100%;
   }
+  .hero-container-inner {
+    margin-top: 10px;
+  }
+  .hero-container-inner img {
+    margin-top: 10px;
+  }
   .carousel-caption {
     margin-left: 4rem;
   }
@@ -421,6 +427,13 @@ header {
     flex-direction: row;
   }
 }
+.hero-container-inner {
+  margin-top: 10px;
+}
+.hero-container-inner img {
+  margin-top: 30px;
+}
+
 #destaque {
   background-color: #1a1a1a;
   overflow: hidden !important;
