@@ -382,10 +382,16 @@ header {
   .carousel-caption p {
     max-width: 100%;
   }
+  .carousel-hero {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
   .hero-container-inner {
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-top: 20px;
   }
   .hero-container-inner img {
+    padding-top: 0px;
     margin-top: 10px;
   }
   .carousel-caption {
