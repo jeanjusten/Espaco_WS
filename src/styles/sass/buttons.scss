@@ -3,7 +3,7 @@
 
 .btn {
     @include mixins.border-radius(22px);
-    color: variables.$textColor;
+    color: variables.$textColorSec;
     background-color: transparent;
     outline: variables.$textColor;
     border: 3.5px solid variables.$textColor;
@@ -11,19 +11,19 @@
     backdrop-filter: blur(10px);
 
     &:hover {
-        background-color: variables.$buttonColorHero;
-        outline: variables.$buttonColorHero;
-        border: 3.5px solid variables.$textColor;
+        background-color: variables.$textColorSec;
+        outline: variables.$textColorSec;
+        border: 3.5px solid variables.$textColorSec;
         backdrop-filter: blur(10px) !important;
-        color: variables.$textColorSec;
+        color: variables.$textColor;
     }
 }
 
 .btn-primary {
     box-shadow: none !important;
-    outline: variables.$textColor;
+    outline: variables.$textColorSec;
     background-color: transparent;
-    border: 3.5px solid variables.$textColor;
+    border: 3.5px solid variables.$textColorSec;
     backdrop-filter: blur(10px) !important;
 }
 
@@ -35,8 +35,8 @@
         background-color: transparent !important;
         outline: none !important;
         box-shadow: none !important;
-        color: variables.$textColor !important;
-        border-color: variables.$textColor !important;
+        color: variables.$textColorSec !important;
+        border-color: variables.$textColorSec !important;
         pointer-events: none !important;
     }
 }
