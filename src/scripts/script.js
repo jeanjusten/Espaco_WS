@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Forces Hero Video Autoplay
+    const video = document.getElementById("video-hero");
+        video.play().catch(() => {
+            console.log("Erro ao reproduzir o vídeo: autoplay bloqueado pelo navegador.");
+        });
+
     // Whatsapp Number
     const whatsappNumber = "+55 (42) 98832-0810";
     // Formated Number
