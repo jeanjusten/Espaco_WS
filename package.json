@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass src/styles/main.scss build/styles/style.css --watch",
     "sass:build": "sass src/styles/main.scss build/styles/style.css",
-    "gulp": "npm run gulp"
+    "gulp": "npm run gulp",
+    "video": "for %f in (src\\videos\\*.mp4) do ffmpeg -i \"%f\" -vcodec libx264 -crf 23 -preset slow -movflags +faststart build\\dist\\videos\\%~nxf"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
