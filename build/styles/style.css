@@ -378,7 +378,6 @@ header {
 }
 
 .logo-store {
-  max-width: 195px;
   padding-top: 4rem;
   align-self: center;
   justify-self: center;
@@ -398,6 +397,41 @@ header {
   margin-top: 30px;
 }
 
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .motto-description {
+    font-size: 0.8rem;
+    margin: 0 3rem;
+  }
+  .logo-store {
+    max-width: 135px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  .motto-description {
+    font-size: 1.25rem;
+    margin: 0 2rem;
+  }
+  .logo-store {
+    max-width: 175px;
+  }
+}
+@media (min-width: 769px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .motto-description {
+    font-size: 1.5rem;
+  }
+  .logo-store {
+    max-width: 195px;
+  }
+}
 #destaque {
   background-color: #1a1a1a;
   overflow: hidden !important;
