@@ -2,42 +2,42 @@
 @use "./mixins/mixins";
 
 header {
-    z-index: 999 !important;
+    z-index: 99 !important;
     width: 100%;
     top: 0;
     left: 0;
     background-color: variables.$headerColor;
     font-family: variables.$mainFont;
     font-weight: 100;
-    position: static;
-    margin-right: 15px;
+    position: fixed;
+    //backdrop-filter: blur(10px);
 }
 
 .navbar {
     //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    z-index: 100 !important;
+    z-index: 99 !important;
     align-items: center;
+    width: 100%;
     vertical-align: center;
     position: static;
-    margin-right: 15px;
 }
 
 .nav-link.active {
-    color: variables.$textColor;
+    color: variables.$headerActiveTextColor !important;
     background-color: transparent !important;
-    border-bottom: 5px solid variables.$textColor;
+    border-bottom: 5px solid variables.$headerActiveColor;
     border-radius: 0px;
 }
 
 @media (max-width: 991px) {
     header {
-        background-color: variables.$headerColor;
+        background-color: variables.$headerColorSmall;
         backdrop-filter: blur(10px);
     }
 
     .nav-link.active {
-        color: variables.$buttonColor !important;
-        border-bottom: 3px solid variables.$buttonColor;
+        color: variables.$headerActiveTextColor !important;
+        border-bottom: 3px solid variables.$headerActiveColor;
         background-color: transparent !important;
     }
 }
@@ -95,18 +95,18 @@ header {
 }
 
 .nav-item a {
-    color: variables.$textColor;
+    color: variables.$headerTextColor;
     font-family: variables.$mainFont;
     border-bottom: 1px;
 }
 
 .nav-tabs button {
-    color: variables.$textColor;
+    color: variables.$headerTextColor;
     text-decoration: none;
 }
 
 .tab-content {
-    color: variables.$textColor;
+    color: variables.$headerTextColor;
 }
 
 .nav-pills {
