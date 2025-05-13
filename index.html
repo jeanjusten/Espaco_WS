@@ -43,7 +43,7 @@
     <script defer src="./build/dist/scripts/dropdown.js"></script>
     <script defer src="./build/dist/scripts/loader.js"></script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-offset="100" tabindex="0">
     <!--PAGE LOADER-->
     <div class="loader">
         <span></span>
@@ -62,7 +62,7 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu-dropdown">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a href="#homepage" class="nav-link active fs-5">home</a>
+                            <a href="#home" class="nav-link active fs-5">home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#destaque" class="nav-link fs-5">destaque</a>
@@ -82,336 +82,331 @@
         </div>
     </header>
 
-    <!--Body Spy Content-->
-    <div data-bs-spy="scroll" data-bs-target="#header-nav">
-        <div id="homepage"></div>
-
-        <!--HERO SECTION-->
-        <main id="home">
-            <div class="container-hero">
-                <video src="./build/dist/video/hero_video.mp4" autoplay muted loop id="video-hero"></video>
-                <div class="motto-text text-sm-center mt-5 text-md-start">
-                    <img src="./build/dist/img/logo_full_white.webp" class="img-fluid logo-store" draggable="false" alt="Espaço WS Logo"> <!--Logo-->
-                    <h1 class="display-6 fw-bolder text-uppercase store-motto mt-3 text-sm-center text-md-start pb-0 mb-0">Seu estilo de todo dia</h1>
-                    <p class="mt-0 pt-0 fs-5 fs-sm-4 fs-md-1 mb-0 text-sm-center text-md-start motto-description">
-                        Conheça nossa seleção e descubra o que há de melhor para o seu guarda-roupa.
-                    </p>
-                    <a href="javascript:void(0)" title="Whatsapp" id="contact-whatsapp-hero" target="_blank" class="mb-5">
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-4 text-uppercase hero-cta">Entrar em contato</button>
-                    </a>
-                </div>
-            </div>
-        </main>
-
-        <!--INFINITE BLACK LINE CAROUSEL-->
-        <div class="ticker-container">
-            <div class="ticker-carousel">
-                <span>| 📱 Participe do nosso grupo do Whatsapp e fique por dentro das novidades da loja!                  | 🎁 No espaço WS você encontra o presente perfeito para o dia das mães.                  | 💳 Parcelamos em até 6x sem juros no cartão.                  | 👗 Confira nossas novas coleções Outono/Inverno.</span>
-                <span>                  | 📱 Participe do nosso grupo do Whatsapp e fique por dentro das novidades da loja!                  | 🎁 No espaço WS você encontra o presente perfeito para o dia das mães.                  | 💳 Parcelamos em até 6x sem juros no cartão.                  | 👗 Confira nossas novas coleções Outono/Inverno.</span>
-                <span>                  | 📱 Participe do nosso grupo do Whatsapp e fique por dentro das novidades da loja!                  | 🎁 No espaço WS você encontra o presente perfeito para o dia das mães.                  | 💳 Parcelamos em até 6x sem juros no cartão.                  | 👗 Confira nossas novas coleções Outono/Inverno.</span>
+    <!--HERO SECTION-->
+    <main id="home">
+        <div class="container-hero">
+            <video src="./build/dist/video/hero_video.mp4" autoplay muted loop id="video-hero"></video>
+            <div class="motto-text text-sm-center text-md-start">
+                <img src="./build/dist/img/logo_full_white.webp" class="img-fluid logo-store" draggable="false" alt="Espaço WS Logo"> <!--Logo-->
+                <h1 class="display-6 fw-bolder text-uppercase store-motto mt-3 text-sm-center text-md-start pb-0 mb-0">Seu estilo de todo dia</h1>
+                <p class="mt-0 pt-0 fs-5 fs-sm-4 fs-md-1 mb-0 text-sm-center text-md-start motto-description">
+                    Conheça nossa seleção e descubra o que há de melhor para o seu guarda-roupa.
+                </p>
+                <a href="javascript:void(0)" title="Whatsapp" id="contact-whatsapp-hero" target="_blank" class="mb-5">
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-4 text-uppercase hero-cta">Entrar em contato</button>
+                </a>
             </div>
         </div>
+    </main>
 
-        <!--FEATURED SECTION-->
-        <section id="destaque" class="pt-5 pb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container pt-3">
-                <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Em destaque</h3>
-            </div>
-            <div class="container container-featured banner d-flex flex-column justify-content-center align-items-center">
-                <div class="container-featured-img" draggable="false">
-                    <div class="span-container">
-                        <span class="span-header d-block"><span class="span-off">40%</span> de<br>desconto<br>
-                            <span class="span-text">
-                                em peças selecionadas
-                            </span>
-                            <a href="javascript:void(0)" draggable="false" id="contact-whatsapp-featured">
-                                <button type="button" class="btn btn-tertiary px-4 py-2 fs-5 text-uppercase span-button">
-                                    Saiba mais
-                                </button>
-                            </a>
+    <!--INFINITE BLACK LINE CAROUSEL-->
+    <div class="ticker-container">
+        <div class="ticker-carousel">
+            <span>| 📱 Participe do nosso grupo do Whatsapp e fique por dentro das novidades da loja!                  | 🎁 No espaço WS você encontra o presente perfeito para o dia das mães.                  | 💳 Parcelamos em até 6x sem juros no cartão.                  | 👗 Confira nossas novas coleções Outono/Inverno.</span>
+            <span>                  | 📱 Participe do nosso grupo do Whatsapp e fique por dentro das novidades da loja!                  | 🎁 No espaço WS você encontra o presente perfeito para o dia das mães.                  | 💳 Parcelamos em até 6x sem juros no cartão.                  | 👗 Confira nossas novas coleções Outono/Inverno.</span>
+            <span>                  | 📱 Participe do nosso grupo do Whatsapp e fique por dentro das novidades da loja!                  | 🎁 No espaço WS você encontra o presente perfeito para o dia das mães.                  | 💳 Parcelamos em até 6x sem juros no cartão.                  | 👗 Confira nossas novas coleções Outono/Inverno.</span>
+        </div>
+    </div>
+
+    <!--FEATURED SECTION-->
+    <section id="destaque" class="pt-5 pb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container pt-3">
+            <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Em destaque</h3>
+        </div>
+        <div class="container container-featured banner d-flex flex-column justify-content-center align-items-center">
+            <div class="container-featured-img" draggable="false">
+                <div class="span-container">
+                    <span class="span-header d-block"><span class="span-off">40%</span> de<br>desconto<br>
+                        <span class="span-text">
+                            em peças selecionadas
                         </span>
-                    </div>
-                    <img src="./build/dist/img/banner_featured.webp" class="img-fluid img-discount-bg" alt="Roupa em desconto" draggable="false">
-                    <img src="./build/dist/img/product_discount.webp" class="img-fluid img-discount-abs" alt="Mulher fashion" draggable="false">
+                        <a href="javascript:void(0)" draggable="false" id="contact-whatsapp-featured">
+                            <button type="button" class="btn btn-tertiary px-4 py-2 fs-5 text-uppercase span-button">
+                                Saiba mais
+                            </button>
+                        </a>
+                    </span>
                 </div>
+                <img src="./build/dist/img/banner_featured.webp" class="img-fluid img-discount-bg" alt="Roupa em desconto" draggable="false">
+                <img src="./build/dist/img/product_discount.webp" class="img-fluid img-discount-abs" alt="Mulher fashion" draggable="false">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--PRODUCTS SECTION-->
-        <section id="produtos" class="pt-5 pb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
-                <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Aqui você encontra</h3>
-            </div>
-            <div class="container container-trending justify-content-center">
-                <div class="row mb-4 justify-content-between">
-                    <div class="col-6 trending-products-top">
-                        <img src="./build/dist/img/product_1.webp" class="img-fluid" draggable="false">
-                        <div class="text-overlay">Moda<br>
-                            feminina
-                        </div>
-                    </div>
-                    <div class="col-6 trending-products-top">
-                        <img src="./build/dist/img/product_2.webp" class="img-fluid" draggable="false">
-                        <div class="text-overlay">Moda<br>
-                            masculina
-                        </div>
+    <!--PRODUCTS SECTION-->
+    <section id="produtos" class="pt-5 pb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
+            <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Aqui você encontra</h3>
+        </div>
+        <div class="container container-trending justify-content-center">
+            <div class="row mb-4 justify-content-between">
+                <div class="col-6 trending-products-top">
+                    <img src="./build/dist/img/product_1.webp" class="img-fluid" draggable="false">
+                    <div class="text-overlay">Moda<br>
+                        feminina
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-4 trending-products-bottom">
-                        <img src="./build/dist/img/product_3.webp" class="img-fluid" draggable="false">
-                        <div class="text-overlay">Linha<br>
-                            esportiva
-                        </div>
-                    </div>
-                    <div class="col-4 trending-products-bottom">
-                        <img src="./build/dist/img/product_4.webp" class="img-fluid" draggable="false">
-                        <div class="text-overlay">Calçados</div>
-                    </div>
-                    <div class="col-4 trending-products-bottom">
-                        <img src="./build/dist/img/product_5.webp" class="img-fluid" draggable="false">
-                        <div class="text-overlay">Acessórios</div>
+                <div class="col-6 trending-products-top">
+                    <img src="./build/dist/img/product_2.webp" class="img-fluid" draggable="false">
+                    <div class="text-overlay">Moda<br>
+                        masculina
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="row justify-content-center">
+                <div class="col-4 trending-products-bottom">
+                    <img src="./build/dist/img/product_3.webp" class="img-fluid" draggable="false">
+                    <div class="text-overlay">Linha<br>
+                        esportiva
+                    </div>
+                </div>
+                <div class="col-4 trending-products-bottom">
+                    <img src="./build/dist/img/product_4.webp" class="img-fluid" draggable="false">
+                    <div class="text-overlay">Calçados</div>
+                </div>
+                <div class="col-4 trending-products-bottom">
+                    <img src="./build/dist/img/product_5.webp" class="img-fluid" draggable="false">
+                    <div class="text-overlay">Acessórios</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--NEW CLOTHING SECTION-->
-        <section id="novidades" class="pt-5 pb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
-                <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Novidades</h3>
+    <!--NEW CLOTHING SECTION-->
+    <section id="novidades" class="pt-5 pb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
+            <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Novidades</h3>
+        </div>
+        <div id="new-clothes-carousel" class="container container-newclothing carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Outfit 1 -->
+                <div class="carousel-item active mb-5">
+                    <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
+                        <div class="container-left-featured">
+                            <img src="./build/dist/img/product_6.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
+                        </div>
+                        <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
+                            <h2>A combinação perfeita.</h2>
+                            <p class="pb-0 mb-0">Camiseta básica Lança Perfume Easy e conjunto moletom amarelo.<br>
+                                Disponíveis nos tamanhos P, M e G.
+                            </p>
+                            <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new">
+                                <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Outfit 2 -->
+                <div class="carousel-item mb-5">
+                    <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
+                        <div class="container-left-featured">
+                            <img src="./build/dist/img/product_7.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
+                        </div>
+                        <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
+                            <h2>All Jeans LP Easy</h2>
+                            <p class="pb-0 mb-0">Look jeans completo Lança Perfume Easy.<br>
+                                Disponível em P, M e G.</p>
+                            <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new-2">
+                                <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Outfit 3 -->
+                <div class="carousel-item mb-5">
+                    <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
+                        <div class="container-left-featured">
+                            <img src="./build/dist/img/product_8.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
+                        </div>
+                        <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
+                            <h2>Look LP Easy Casual</h2>
+                            <p class="pb-0 mb-0">Conjunto social Lança Perfume.<br>
+                                Disponível em P, M e G.</p>
+                            <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new-3">
+                                <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Outfit 4 -->
+                <div class="carousel-item mb-5">
+                    <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
+                        <div class="container-left-featured">
+                            <img src="./build/dist/img/product_9.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
+                        </div>
+                        <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
+                            <h2>Look Sport LP Easy.</h2>
+                            <p class="pb-0 mb-0">Conjunto sport para academia ou exercícios.<br>
+                                Disponível em P, M e G.</p>
+                            <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new-4">
+                                <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="new-clothes-carousel" class="container container-newclothing carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators mt-5 pt-5">
+                <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+        </div>  
+    </section>
+
+    <!--CONTACT SECTION-->
+    <section id="contato" class="pt-4 pb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
+            <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Contato</h3>
+        </div>
+        <!--Store photos carousel-->
+        <div class="container container-contact-banner mx-auto justify-content-center">
+            <div id="store-carousel" class="carousel slide carousel-fade pb-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <!-- Outfit 1 -->
-                    <div class="carousel-item active mb-5">
-                        <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
-                            <div class="container-left-featured">
-                                <img src="./build/dist/img/product_6.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
-                            </div>
-                            <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
-                                <h2>A combinação perfeita.</h2>
-                                <p class="pb-0 mb-0">Camiseta básica Lança Perfume Easy e conjunto moletom amarelo.<br>
-                                    Disponíveis nos tamanhos P, M e G.
-                                </p>
-                                <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new">
-                                    <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="carousel-item active c-item-store align-items-center">
+                        <img src="./build/dist/img/store0.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
                     </div>
-                    <!-- Outfit 2 -->
-                    <div class="carousel-item mb-5">
-                        <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
-                            <div class="container-left-featured">
-                                <img src="./build/dist/img/product_7.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
-                            </div>
-                            <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
-                                <h2>All Jeans LP Easy</h2>
-                                <p class="pb-0 mb-0">Look jeans completo Lança Perfume Easy.<br>
-                                    Disponível em P, M e G.</p>
-                                <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new-2">
-                                    <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="carousel-item c-item-store">
+                        <img src="./build/dist/img/store1.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
                     </div>
-                    <!-- Outfit 3 -->
-                    <div class="carousel-item mb-5">
-                        <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
-                            <div class="container-left-featured">
-                                <img src="./build/dist/img/product_8.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
-                            </div>
-                            <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
-                                <h2>Look LP Easy Casual</h2>
-                                <p class="pb-0 mb-0">Conjunto social Lança Perfume.<br>
-                                    Disponível em P, M e G.</p>
-                                <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new-3">
-                                    <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="carousel-item c-item-store">
+                        <img src="./build/dist/img/store7.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
                     </div>
-                    <!-- Outfit 4 -->
-                    <div class="carousel-item mb-5">
-                        <div class="d-flex flex-column flex-md-row mx-auto justify-content-between">
-                            <div class="container-left-featured">
-                                <img src="./build/dist/img/product_9.webp" class="img-fluid mb-3 mb-md-0" draggable="false" alt="Roupa em destaque">
-                            </div>
-                            <div class="container-right-featured mx-auto m-md-3 text-center text-md-end px-2">
-                                <h2>Look Sport LP Easy.</h2>
-                                <p class="pb-0 mb-0">Conjunto sport para academia ou exercícios.<br>
-                                    Disponível em P, M e G.</p>
-                                <a href="javascript:void(0)" draggable="false" target="_blank" id="contact-whatsapp-new-4">
-                                    <button type="button" class="btn-secondary mt-3">Ver disponibilidade</button>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="carousel-item c-item-store">
+                        <img src="./build/dist/img/store3.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
+                    </div>
+                    <div class="carousel-item c-item-store">
+                        <img src="./build/dist/img/store6.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
+                    </div>
+                    <div class="carousel-item c-item-store">
+                        <img src="./build/dist/img/store5.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
                     </div>
                 </div>
-                <div class="carousel-indicators mt-5 pt-5">
-                    <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#new-clothes-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-            </div>  
-        </section>
-
-        <!--CONTACT SECTION-->
-        <section id="contato" class="pt-4 pb-5">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3 line-container">
-                <h3 class="h2-white text-uppercase fw-bolder px-3 py-2 mb-4"># Contato</h3>
-            </div>
-            <!--Store photos carousel-->
-            <div class="container container-contact-banner mx-auto justify-content-center">
-                <div id="store-carousel" class="carousel slide carousel-fade pb-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active c-item-store align-items-center">
-                            <img src="./build/dist/img/store0.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
-                        </div>
-                        <div class="carousel-item c-item-store">
-                            <img src="./build/dist/img/store1.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
-                        </div>
-                        <div class="carousel-item c-item-store">
-                            <img src="./build/dist/img/store7.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
-                        </div>
-                        <div class="carousel-item c-item-store">
-                            <img src="./build/dist/img/store3.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
-                        </div>
-                        <div class="carousel-item c-item-store">
-                            <img src="./build/dist/img/store6.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
-                        </div>
-                        <div class="carousel-item c-item-store">
-                            <img src="./build/dist/img/store5.webp" draggable="false" alt="Loja Espaço WS" class="d-block w-100 c-img-store" draggable="false">
-                        </div>
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#store-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-            <div class="container container-contact d-sm-block d-md-flex flex-row mx-auto gap-5 justify-content-between">
-                <div class="container-left-contact mx-sm-auto m-md-3 text-center text-md-start mx-auto">
-                    <h2 class="text-sm-center text-md-start">
-                        Como nos encontrar?
-                    </h2>
-                    <p class="pb-0 mb-0 container-contact-text">
-                        O Espaço WS se encontra na Rua Tenente Max Wolff Filho, 436 em São Mateus do Sul-PR.
-                        Venha conhecer a loja e descobrir nossos produtos escolhidos a dedo para montar a melhor versão do seu guarda-roupa.
-                        <br><br>Você também pode nos encontrar nas redes sociais para ficar por dentro das novidades:
-                    </p>
-                    <div id="contact-social-links" class="pt-2">
-                        <a href="javascript:void(0)" target="_blank" title="Instagram" id="contact-instagram-section" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                            </svg>
-                        </a>
-                        <a href="javascript:void(0)" target="_blank" title="Whatsapp" id="contact-whatsapp-section" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <p class="pt-3">
-                        Ou entrar no nosso grupo do Whatsapp e ficar por dentro de todas as novidades assim que estiverem disponíveis!
-                    </p>
-                    <a href="javascript:void(0)" draggable="false" id="contact-whatsapp-group">
-                        <button type="button" class="btn-secondary mb-3">
-                            Entrar no Grupo
-                        </button>
-                    </a>
-                </div>
-                <div class="container-right-contact mt-2 d-flex justify-content-center mx-auto">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.9767052016425!2d-50.383927397648065!3d-25.871010745400742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e7a2dc738992ad%3A0x47d20fc5f52fc809!2sR.%20Ten.%20Max%20Wolf%20Filho%2C%20436%20-%20S%C3%A3o%20Mateus%20do%20Sul%2C%20PR%2C%2083900-000!5e0!3m2!1sen!2sbr!4v1745012573701!5m2!1sen!2sbr" class="embed-map" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <!--FOOTER SECTION-->
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted footer-body">
-            <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom" id="info">
-                <div class="me-5 d-none d-lg-block mt-1">
-                    <span class="follow-us-footer">Siga-nos nas redes sociais ou entre em contato:</span>
-                </div>
-                <div id="footer-social-links">
-                    <a href="javascript:void(0)" target="_blank" title="Instagram" id="contact-instagram-svg" target="_blank">
+            </div>   
+        </div>
+        <div class="container container-contact d-sm-block d-md-flex flex-row mx-auto gap-5 justify-content-between">
+            <div class="container-left-contact mx-sm-auto m-md-3 text-center text-md-start mx-auto">
+                <h2 class="text-sm-center text-md-start">
+                    Como nos encontrar?
+                </h2>
+                <p class="pb-0 mb-0 container-contact-text">
+                    O Espaço WS se encontra na Rua Tenente Max Wolff Filho, 436 em São Mateus do Sul-PR.
+                    Venha conhecer a loja e descobrir nossos produtos escolhidos a dedo para montar a melhor versão do seu guarda-roupa.
+                    <br><br>Você também pode nos encontrar nas redes sociais para ficar por dentro das novidades:
+                </p>
+                <div id="contact-social-links" class="pt-2">
+                    <a href="javascript:void(0)" target="_blank" title="Instagram" id="contact-instagram-section" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                         </svg>
                     </a>
-                    <a href="javascript:void(0)" target="_blank" title="Whatsapp" id="contact-whatsapp-svg" target="_blank">
+                    <a href="javascript:void(0)" target="_blank" title="Whatsapp" id="contact-whatsapp-section" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                         </svg>
                     </a>
                 </div>
-            </section>
-            <section id="info-container" class="pt-5">
-                <div class="container text-center text-md-start">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center" id="footer-info">
-                            <img src="./build/dist/img/logo_full_footer.webp" draggable="false" alt="Espaço WS Logo. logo" id="footer-logo">
-                            <p class="text-capitalize mb-4">
-                                Moda masculina e feminina
-                            </p>
-                            <span class="text-uppercase fw-bold">Marcas que trabalhamos</span>
-                            <div class="store-brands d-flex flex-row justify-content-center gap-2 mt-2">
-                                <img src="./build/dist/img/brand1.webp" class="img-fluid" draggable="false" alt="Beagle" title="Beagle">
-                                <img src="./build/dist/img/brand2.webp" class="img-fluid" draggable="false" alt="Triton" title="Triton">
-                                <img src="./build/dist/img/brand3.webp" class="img-fluid" draggable="false" alt="Lança Perfume" title="Lança Perfume">
-                                <img src="./build/dist/img/brand4.webp" class="img-fluid" draggable="false" alt="Colcci" title="Colcci">
-                                <img src="./build/dist/img/brand5.webp" class="img-fluid" draggable="false" alt="Displicent" title="Displicent">
-                            </div>
-                        </div>
-                        <!--Section Column-->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu1">
-                            <p class="text-uppercase fw-bold mb-4">
-                                Links
-                            </p>
-                            <p>
-                                <a href="javascript:void(0)" id="contact-instagram-footer" class="text-reset" target="_blank">Instagram</a>
-                            </p>
-                            <p>
-                                <a href="javascript:void(0)" id="contact-whatsapp-footer" class="text-reset" target="_blank">Whatsapp</a>
-                            </p>
-                            <p>
-                                <a href="javascript:void(0)" id="contact-whatsapp-group-footer" class="text-reset" target="_blank">Grupo Espaço WS</a>
-                            </p>
-                                <p class="text-uppercase fw-bold mb-4" id="cnpj"></p>
-                            </p>
-                        </div>
-                        <!--Section Column-->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <p class="contact-footer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
-                                    <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                                </svg>
-                            De segunda a sexta, das 9:00h às 18:00h e Sábado das 09:00 às 13:00h.
-                            </p>
-                            <p class="contact-footer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-                                    <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-                                </svg>
-                                R. Tenente Max Wolff Filho, 436, São Mateus do Sul - PR, 83900-092, Brasil
-                            </p>
+                <p class="pt-3">
+                    Ou entrar no nosso grupo do Whatsapp e ficar por dentro de todas as novidades assim que estiverem disponíveis!
+                </p>
+                <a href="javascript:void(0)" draggable="false" id="contact-whatsapp-group">
+                    <button type="button" class="btn-secondary mb-3">
+                        Entrar no Grupo
+                    </button>
+                </a>
+            </div>
+            <div class="container-right-contact mt-2 d-flex justify-content-center mx-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.9767052016425!2d-50.383927397648065!3d-25.871010745400742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e7a2dc738992ad%3A0x47d20fc5f52fc809!2sR.%20Ten.%20Max%20Wolf%20Filho%2C%20436%20-%20S%C3%A3o%20Mateus%20do%20Sul%2C%20PR%2C%2083900-000!5e0!3m2!1sen!2sbr!4v1745012573701!5m2!1sen!2sbr" class="embed-map" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted footer-body">
+        <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom" id="info">
+            <div class="me-5 d-none d-lg-block mt-1">
+                <span class="follow-us-footer">Siga-nos nas redes sociais ou entre em contato:</span>
+            </div>
+            <div id="footer-social-links">
+                <a href="javascript:void(0)" target="_blank" title="Instagram" id="contact-instagram-svg" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" target="_blank" title="Whatsapp" id="contact-whatsapp-svg" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section id="info-container" class="pt-5">
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center" id="footer-info">
+                        <img src="./build/dist/img/logo_full_footer.webp" draggable="false" alt="Espaço WS Logo. logo" id="footer-logo">
+                        <p class="text-capitalize mb-4">
+                            Moda masculina e feminina
+                        </p>
+                        <span class="text-uppercase fw-bold">Marcas que trabalhamos</span>
+                        <div class="store-brands d-flex flex-row justify-content-center gap-2 mt-2">
+                            <img src="./build/dist/img/brand1.webp" class="img-fluid" draggable="false" alt="Beagle" title="Beagle">
+                            <img src="./build/dist/img/brand2.webp" class="img-fluid" draggable="false" alt="Triton" title="Triton">
+                            <img src="./build/dist/img/brand3.webp" class="img-fluid" draggable="false" alt="Lança Perfume" title="Lança Perfume">
+                            <img src="./build/dist/img/brand4.webp" class="img-fluid" draggable="false" alt="Colcci" title="Colcci">
+                            <img src="./build/dist/img/brand5.webp" class="img-fluid" draggable="false" alt="Displicent" title="Displicent">
                         </div>
                     </div>
+                    <!--Section Column-->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-menu1">
+                        <p class="text-uppercase fw-bold mb-4">
+                            Links
+                        </p>
+                        <p>
+                            <a href="javascript:void(0)" id="contact-instagram-footer" class="text-reset" target="_blank">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="javascript:void(0)" id="contact-whatsapp-footer" class="text-reset" target="_blank">Whatsapp</a>
+                        </p>
+                        <p>
+                            <a href="javascript:void(0)" id="contact-whatsapp-group-footer" class="text-reset" target="_blank">Grupo Espaço WS</a>
+                        </p>
+                            <p class="text-uppercase fw-bold mb-4" id="cnpj"></p>
+                        </p>
+                    </div>
+                    <!--Section Column-->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                        De segunda a sexta, das 9:00h às 18:00h e Sábado das 09:00 às 13:00h.
+                        </p>
+                        <p class="contact-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                                <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                            </svg>
+                            R. Tenente Max Wolff Filho, 436, São Mateus do Sul - PR, 83900-092, Brasil
+                        </p>
+                    </div>
                 </div>
-            </section>
-            <!-- Copyright -->
-            <div class="text-center p-1" id="footer-foot-note">
-                <span>©2025 Espaço WS - Todos os direitos reservados.</span>
             </div>
-        </footer>
-    </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-1" id="footer-foot-note">
+            <span>©2025 Espaço WS - Todos os direitos reservados.</span>
+        </div>
+    </footer>
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

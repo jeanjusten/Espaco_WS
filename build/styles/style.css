@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: 64px;
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
 }
@@ -239,7 +238,7 @@ header {
 .nav-link.active {
   color: #edd068 !important;
   background-color: transparent !important;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #edd068 !important;
   border-radius: 0px;
 }
 
@@ -249,8 +248,7 @@ header {
     backdrop-filter: blur(10px);
   }
   .nav-link.active {
-    color: #edd068 !important;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #edd068 !important;
     background-color: transparent !important;
   }
 }
@@ -332,6 +330,9 @@ header {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #video-hero {
@@ -343,7 +344,7 @@ header {
   object-fit: cover;
   object-position: center;
   z-index: 1;
-  filter: brightness(0.6);
+  filter: brightness(0.25);
   margin: 0;
   padding: 0;
 }
@@ -364,7 +365,6 @@ header {
   z-index: 2;
   text-align: center;
   color: #dfdfdf;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,6 +389,13 @@ header {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
+}
+
+.hero-container-inner {
+  margin-top: 10px;
+}
+.hero-container-inner img {
+  margin-top: 30px;
 }
 
 #destaque {

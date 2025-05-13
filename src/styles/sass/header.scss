@@ -25,7 +25,7 @@ header {
 .nav-link.active {
     color: variables.$headerActiveTextColor !important;
     background-color: transparent !important;
-    border-bottom: 5px solid variables.$headerActiveColor;
+    border-bottom: 5px solid variables.$headerActiveTextColor !important;
     border-radius: 0px;
 }
 
@@ -36,8 +36,7 @@ header {
     }
 
     .nav-link.active {
-        color: variables.$headerActiveTextColor !important;
-        border-bottom: 3px solid variables.$headerActiveColor;
+        border-bottom: 3px solid variables.$headerActiveTextColor !important;
         background-color: transparent !important;
     }
 }

@@ -10,8 +10,11 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
-  
+
 #video-hero {
     position: absolute;
     top: 0;
@@ -21,7 +24,7 @@
     object-fit: cover;
     object-position: center;
     z-index: 1;
-    filter: brightness(0.6);
+    filter: brightness(0.25);
     margin: 0;
     padding: 0;
 }
@@ -42,7 +45,6 @@
     z-index: 2; 
     text-align: center;
     color: variables.$textColorAlternate; 
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
