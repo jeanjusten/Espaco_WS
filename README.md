@@ -102,7 +102,7 @@ This website uses:<br>
 
 ## :large_orange_diamond: Etcetera
 ### :arrow_forward: About
-Espaço WS's Landing Page was created by ![logo](https://github.com/user-attachments/assets/0894beaf-f587-4d0a-983a-caf7fb551554) JEAN JUSTEN.
+Espaço WS's Landing Page was created by ![logo](https://github.com/user-attachments/assets/0894beaf-f587-4d0a-983a-caf7fb551554) <strong>JEAN JUSTEN</strong>.
 
 ### :arrow_forward: License
 You may use, copy, share and modify the code as you please. No credits needed.</p>
