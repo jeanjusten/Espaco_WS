@@ -1,6 +1,7 @@
 ![Status](https://img.shields.io/badge/status-in--progress-yellow)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+![2025-06-0321-41-31-ezgif com-crop(2)](https://github.com/user-attachments/assets/1382fbf4-27cf-4f4a-b359-6cd4ed8100b7)
 <!--Title Image-->
 # :computer: Espaço WS - Clothing Store - Landing-Page
 <p>
@@ -49,7 +50,7 @@ ensuring updates and improvements are applied whenever necessary.
 <!--Features-->
 ## :large_orange_diamond: Features
 ### :arrow_forward: Hero Section
-
+![2025-06-0321-41-31-ezgif com-crop(3)](https://github.com/user-attachments/assets/7cc1822a-0fba-4c80-a75f-3577a4b9b950)
 <p>The hero section features a full-screen background video with real footage from the Espaço WS store. If the browser fails to load the video, a placeholder image will be displayed instead.
 </p>
 
@@ -59,15 +60,15 @@ The website uses Bootstrap breakpoints to provide a responsive experience.
 </p>
 
 #### :small_red_triangle_down: Mobile
-
+![2025-06-0921-25-57-ezgif com-crop](https://github.com/user-attachments/assets/18ebe304-079a-43aa-bdef-a3b0bb24092c)
 <p>- Mobile View</p>
 
 #### :small_red_triangle_down: Tablet
-
+![2025-06-0921-25-30-ezgif com-crop](https://github.com/user-attachments/assets/424fda61-b3ab-49fb-a46d-23dac032c7ef)
 <p>- Tablet View</p>
 
 #### :small_red_triangle_down: Desktop
-
+![2025-06-0921-18-35-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2ec85d6f-1187-4f65-8436-dde2fa37b2b7)
 <p>- Desktop View</p>
 
 <!--Tools Used-->
