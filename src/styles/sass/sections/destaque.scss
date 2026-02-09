@@ -39,23 +39,23 @@
             z-index: 2;
 
             @media (max-width: 560px) {
-                font-size: 3.0rem; 
-                line-height: 3.2rem;
+                font-size: 2.5rem; 
+                line-height: 2.7rem;
             }
 
             @media (min-width: 561px) and (max-width: 760px) {
-                font-size: 4rem; 
-                line-height: 4rem;
+                font-size: 3.2rem; 
+                line-height: 3.2rem;
             }
 
             @media (min-width: 761px) and (max-width: 960px) {
-                font-size: 6rem; 
-                line-height: 6rem;
+                font-size: 5rem; 
+                line-height: 5rem;
             }
 
             @media (min-width: 961px) {
-                font-size: 9rem; 
-                line-height: 8rem;
+                font-size: 6rem; 
+                line-height: 6rem;
             }
 
             .span-text {
@@ -63,18 +63,18 @@
                 position: absolute;
                 padding-left: 5px;
                 padding-top: 10px;
-                line-height: 5px;
+                line-height: 15px;
                 text-transform: uppercase;
                 color: variables.$textColorSec;
                 text-wrap: pretty;
                 z-index: 2;
 
                 @media (max-width: 560px) {
-                    font-size: 0.8rem; 
+                    font-size: 1.1rem; 
                 }
     
                 @media (min-width: 561px) and (max-width: 760px) {
-                    font-size: 1rem; 
+                    font-size: 1.5rem; 
                 }
     
                 @media (min-width: 761px) and (max-width: 960px) {
@@ -107,8 +107,14 @@
         height: 100%;
         max-width: 100%;
         bottom: 0;
-        left: 56%;
+        left: 68%; //56% original
         z-index: 3;
         overflow: hidden !important;
+        transition: ease-in-out 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: ease-in-out 0.5s;
+        }
     }
 }

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formattedWhatsappNumber = whatsappNumber.replace(/\D/g, "");
     // Message
     const message = "Olá! Gostaria de saber mais sobre os produtos da Espaço WS.";
-    const messageDiscount = "Olá! Gostaria de saber mais sobre os produtos em promoção da Espaço WS.";
+    const messageDiscount = "Olá! Gostaria de saber mais sobre o desconto progressivo.";
     // Whatsapp API number
     const whatsappApi = `https://wa.me/${formattedWhatsappNumber}?text=${encodeURIComponent(message)}`;
     const whatsappApiDiscount = `https://wa.me/${formattedWhatsappNumber}?text=${encodeURIComponent(messageDiscount)}`;

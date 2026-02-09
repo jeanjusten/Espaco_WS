@@ -104,10 +104,10 @@ img {
 }
 
 .btn-secondary {
-  color: white;
+  color: black;
   background-color: transparent;
   outline: white;
-  border: 3.5px solid white;
+  border: 3.5px solid black;
   transition: ease-in-out 0.5s;
   backdrop-filter: blur(10px);
   padding: 5px 15px;
@@ -190,12 +190,12 @@ body {
   margin: 0;
   overflow-x: hidden !important;
   overflow-y: auto;
-  background-color: white;
+  background-color: #1a1a1a;
 }
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #ffffff #1a1a1a !important;
+  scrollbar-color: #1a1a1a #ffffff !important;
 }
 
 ::-webkit-scrollbar {
@@ -203,7 +203,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a !important;
+  background: #ffffff !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -301,18 +301,18 @@ header {
 }
 
 .nav-item a {
-  color: white;
+  color: #fcd856;
   font-family: "Special Gothic Condensed One", sans-serif;
   border-bottom: 1px;
 }
 
 .nav-tabs button {
-  color: white;
+  color: #fcd856;
   text-decoration: none;
 }
 
 .tab-content {
-  color: white;
+  color: #fcd856;
 }
 
 .nav-pills {
@@ -440,7 +440,7 @@ header {
   }
 }
 #destaque {
-  background-color: #1a1a1a;
+  background-color: white;
   overflow: hidden !important;
 }
 #destaque h3 {
@@ -476,26 +476,26 @@ header {
 }
 @media (max-width: 560px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 3rem;
-    line-height: 3.2rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
   }
 }
 @media (min-width: 561px) and (max-width: 760px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
   }
 }
 @media (min-width: 761px) and (max-width: 960px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 @media (min-width: 961px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 9rem;
-    line-height: 8rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
 }
 .container-featured .container-featured-img .span-header .span-text {
@@ -503,7 +503,7 @@ header {
   position: absolute;
   padding-left: 5px;
   padding-top: 10px;
-  line-height: 5px;
+  line-height: 15px;
   text-transform: uppercase;
   color: white;
   text-wrap: pretty;
@@ -511,12 +511,12 @@ header {
 }
 @media (max-width: 560px) {
   .container-featured .container-featured-img .span-header .span-text {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 561px) and (max-width: 760px) {
   .container-featured .container-featured-img .span-header .span-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 761px) and (max-width: 960px) {
@@ -547,9 +547,14 @@ header {
   height: 100%;
   max-width: 100%;
   bottom: 0;
-  left: 56%;
+  left: 68%;
   z-index: 3;
   overflow: hidden !important;
+  transition: ease-in-out 0.5s;
+}
+.container-featured .img-discount-abs:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
 }
 
 .ticker-container {
@@ -579,7 +584,7 @@ header {
   }
 }
 #produtos {
-  background-color: #1a1a1a;
+  background-color: white;
 }
 #produtos h3 {
   color: black !important;
@@ -670,14 +675,14 @@ header {
   }
 }
 #novidades {
-  background-color: #1a1a1a;
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 #novidades h3 {
   color: black !important;
 }
 #novidades span, #novidades p, #novidades h1, #novidades h2, #novidades h4, #novidades h4, #novidades h6 {
-  color: white !important;
+  color: black !important;
 }
 
 .container-newclothing {
@@ -722,13 +727,13 @@ header {
   }
 }
 #contato {
-  background-color: #1a1a1a;
+  background-color: white;
 }
 #contato h3 {
   color: black !important;
 }
 #contato span, #contato p, #contato h1, #contato h2, #contato h4, #contato h4, #contato h6 {
-  color: white !important;
+  color: black !important;
 }
 
 .container-contact-banner {

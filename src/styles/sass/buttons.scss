@@ -42,10 +42,10 @@
 }
 
 .btn-secondary {
-    color: variables.$textColorSec;
+    color: variables.$textColor; //variables.$textColorSec;
     background-color: transparent;
     outline: variables.$textColorSec;
-    border: 3.5px solid variables.$textColorSec;
+    border: 3.5px solid variables.$textColor; //variables.$textColorSec;
     transition: ease-in-out 0.5s;
     backdrop-filter: blur(10px);
     padding: 5px 15px;
