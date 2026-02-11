@@ -104,10 +104,10 @@ img {
 }
 
 .btn-secondary {
-  color: black;
+  color: white;
   background-color: transparent;
   outline: white;
-  border: 3.5px solid black;
+  border: 3.5px solid white;
   transition: ease-in-out 0.5s;
   backdrop-filter: blur(10px);
   padding: 5px 15px;
@@ -190,12 +190,12 @@ body {
   margin: 0;
   overflow-x: hidden !important;
   overflow-y: auto;
-  background-color: #1a1a1a;
+  background-color: white;
 }
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #1a1a1a #ffffff !important;
+  scrollbar-color: #ffffff #1a1a1a !important;
 }
 
 ::-webkit-scrollbar {
@@ -203,7 +203,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff !important;
+  background: #1a1a1a !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -301,18 +301,18 @@ header {
 }
 
 .nav-item a {
-  color: #fcd856;
+  color: white;
   font-family: "Special Gothic Condensed One", sans-serif;
   border-bottom: 1px;
 }
 
 .nav-tabs button {
-  color: #fcd856;
+  color: white;
   text-decoration: none;
 }
 
 .tab-content {
-  color: #fcd856;
+  color: white;
 }
 
 .nav-pills {
@@ -335,7 +335,7 @@ header {
 .container-hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -440,7 +440,7 @@ header {
   }
 }
 #destaque {
-  background-color: white;
+  background-color: #1a1a1a;
   overflow: hidden !important;
 }
 #destaque h3 {
@@ -468,7 +468,7 @@ header {
   position: absolute;
   padding: 25px;
   top: 30px;
-  left: 60px;
+  left: 5px;
   text-transform: uppercase;
   color: white;
   text-wrap: pretty;
@@ -476,7 +476,7 @@ header {
 }
 @media (max-width: 560px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 2.7rem;
   }
 }
@@ -584,7 +584,7 @@ header {
   }
 }
 #produtos {
-  background-color: white;
+  background-color: #1a1a1a;
 }
 #produtos h3 {
   color: black !important;
@@ -675,14 +675,14 @@ header {
   }
 }
 #novidades {
-  background-color: white;
+  background-color: #1a1a1a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 #novidades h3 {
   color: black !important;
 }
 #novidades span, #novidades p, #novidades h1, #novidades h2, #novidades h4, #novidades h4, #novidades h6 {
-  color: black !important;
+  color: white !important;
 }
 
 .container-newclothing {
@@ -727,13 +727,13 @@ header {
   }
 }
 #contato {
-  background-color: white;
+  background-color: #1a1a1a;
 }
 #contato h3 {
   color: black !important;
 }
 #contato span, #contato p, #contato h1, #contato h2, #contato h4, #contato h4, #contato h6 {
-  color: black !important;
+  color: white !important;
 }
 
 .container-contact-banner {

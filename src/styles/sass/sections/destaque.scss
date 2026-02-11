@@ -32,14 +32,14 @@
             position: absolute;
             padding: 25px;
             top: 30px;
-            left: 60px;
+            left: 5px;
             text-transform: uppercase;
             color: variables.$textColorSec;
             text-wrap: pretty;
             z-index: 2;
 
             @media (max-width: 560px) {
-                font-size: 2.5rem; 
+                font-size: 2.25rem; 
                 line-height: 2.7rem;
             }
 
