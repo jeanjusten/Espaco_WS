@@ -3,6 +3,7 @@
 html {
   scrollbar-width: thin;
   scrollbar-color: #{variables.$colorScroll} #{variables.$colorScrollBg} !important;
+  scrollbar-gutter: stable;
 }
 
 ::-webkit-scrollbar {
