@@ -87,10 +87,31 @@
     <!--HERO SECTION-->
     <main id="home">
         <div class="container-hero">
+            <!--
             <video autoplay muted loop playsinline id="video-hero" preload="auto" poster="build/dist/img/hero_poster.webp">
                 <source src="build/dist/videos/hero_video_desktop_compressed.mp4" type="video/mp4" media="(min-width: 768px)">
                 <source src="build/dist/videos/hero_video_mobile_compressed.mp4" type="video/mp4" media="(max-width: 767px)">
             </video>
+            -->
+            <video autoplay muted loop playsinline preload="auto"
+                poster="build/dist/img/hero_poster.webp"
+                id="video-hero">
+            </video>
+            <script>
+                const video = document.getElementById("video-hero");
+                const source = document.createElement("source");
+
+                if (window.innerWidth >= 768) {
+                    source.src = "build/dist/videos/hero_video_desktop_compressed.mp4";
+                } else {
+                    source.src = "build/dist/videos/hero_video_mobile_compressed.mp4";
+                }
+
+                source.type = "video/mp4";
+                video.appendChild(source);
+                video.load();
+            </script>
+
             <div class="motto-text text-sm-center text-md-start">
                 <img src="./build/dist/img/logo_full_white.webp" class="img-fluid logo-store" draggable="false" alt="Espaço WS"> <!--Logo-->
                 <h1 class="display-6 fw-bolder text-uppercase store-motto mt-3 mx-3 text-sm-center text-md-start pb-0 mb-0">Seu estilo de todo dia</h1>
