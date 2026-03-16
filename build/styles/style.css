@@ -477,26 +477,26 @@ header {
 }
 @media (max-width: 560px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 2.25rem;
-    line-height: 2.7rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 @media (min-width: 561px) and (max-width: 760px) {
-  .container-featured .container-featured-img .span-header {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-}
-@media (min-width: 761px) and (max-width: 960px) {
   .container-featured .container-featured-img .span-header {
     font-size: 5rem;
     line-height: 5rem;
   }
 }
+@media (min-width: 761px) and (max-width: 960px) {
+  .container-featured .container-featured-img .span-header {
+    font-size: 6.2rem;
+    line-height: 6.2rem;
+  }
+}
 @media (min-width: 961px) {
   .container-featured .container-featured-img .span-header {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 7.2rem;
+    line-height: 7.2rem;
   }
 }
 .container-featured .container-featured-img .span-header .span-text {
@@ -548,13 +548,9 @@ header {
   height: 100%;
   max-width: 100%;
   bottom: 0;
-  left: 68%;
+  left: 56%;
   z-index: 3;
   overflow: hidden !important;
-  transition: ease-in-out 0.5s;
-}
-.container-featured .img-discount-abs:hover {
-  transform: scale(1.05);
   transition: ease-in-out 0.5s;
 }
 
@@ -677,7 +673,6 @@ header {
 }
 #novidades {
   background-color: #1a1a1a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 #novidades h3 {
   color: black !important;
